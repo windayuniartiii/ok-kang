@@ -1,0 +1,60 @@
+body {
+	background: url('bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav {
+  overflow: hidden;
+  background-color: white;
+}
+.nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px 26px;
+  text-decoration: none;
+}
+.login{
+	background-color: transparent;
+}
+.nav a:hover {
+  background-color: #F9F871;
+}
+.container {
+	padding: 14px 16px;
+	margin: 10px;
+	background-color: transparent;
+}
+footer {
+    background:white;
+}
+
+ul {
+    display:grid;
+    list-style-type:none;
+    margin:0;padding:0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+ul li {
+    padding: 2em;
+    color: black;
+}
+ul li span {
+    display:grid;
+    font-size:1.4em;
+    margin-bottom:1em;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
