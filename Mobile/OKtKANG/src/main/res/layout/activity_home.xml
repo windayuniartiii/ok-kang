@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/relSearch"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="55dp">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:elevation="5dp">
+
+            <TextView
+                android:id="@+id/browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_centerVertical="true"
+                android:text="@string/home_toolbar"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:fontFamily="@font/roboto_condensed_bold" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/shape_circle">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_filter"
+                    android:tint="@color/subtitle"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/relSearch"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/search_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/namauser"
+                    android:layout_below="@+id/search_bar"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/home_toolbar"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/roboto_condensed_bold"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/category_title"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/search_bar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/home_categories"
+                    android:textSize="20sp"
+                    android:textColor="@color/titleColor"
+                    android:layout_marginLeft="14dp" />
+
+                <TextView
+                    android:id="@+id/categories_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home_info"
+                    android:textSize="14sp"
+                    android:layout_marginRight="22dp"
+                    android:textColor="@color/colorPrimary"
+                    app:fontFamily="@font/roboto_medium" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/small_category"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/category_title"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_rounded_sign"
+                    android:text="@string/home_small"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/medium_category"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/small_category"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_rounded_sign"
+                    android:text="@string/home_medium"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/large_category"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/medium_category"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_rounded_sign"
+                    android:text="@string/home_large"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow_view"/>
+
+        <!--bottom navigation-->
+        <include
+            android:id="@+id/include"
+            layout="@layout/bottom_navigation_view"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

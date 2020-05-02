@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">OKtKANG</string>
+
+    <string name="regist_title">Register</string>
+    <string name="regist_sign_to_continue">Silahkan mendaftar untuk menikmati layanan OK+KANG.</string>
+    <string name="regist_nama">Nama</string>
+    <string name="regist_username">Username</string>
+    <string name="regist_password">Password</string>
+    <string name="regist_cpassword">Confirm Password</string>
+    <string name="regist_login_button">Register</string>
+    <string name="regist_have_account">Sudah punya akun? Masuk.</string>
+
+    <string name="welcome_title">Selamat Datang</string>
+    <string name="welcome_sign_to_continue">Silahkan login untuk melanjutkan.</string>
+    <string name="welcome_username">USERNAME</string>
+    <string name="welcome_password">PASSWORD</string>
+    <string name="welcome_login_button">LOGIN</string>
+    <string name="welcome_dont_have_account">Belum punya akun? Register.</string>
+
+    <string name="home_categories">Kategori</string>
+    <string name="home_info">Info</string>
+    <string name="home_toolbar">Selamat Datang,</string>
+    <string name="home_nama">Nama</string>
+    <string name="home_small">Paket Kecil</string>
+    <string name="home_medium">Paket Sedang</string>
+    <string name="home_large">Paket Besar</string>
+
+
+
+
+</resources>
